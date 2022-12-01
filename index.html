@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #joe-box{
+            display: inline-block;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 100px  auto;
+            width: 250px; 
+            height: 250px;
+            background-color: rgb(43, 43, 148);
+            transition: all 1s;
+        }
+
+        #joe-box:hover{
+            background-color: rgb(184, 0, 0);
+        }
+        
+    </style>
+
+    <script src="CustomElements/buttons/close-button/CloseButton.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Elements</title>
+</head>
+<body>
+    
+    <button style="display: block;" is="close-button" idRef="joe-box">Close Button</button>
+
+
+    <div id="joe-box"></div>
+    <div id="joe-box"></div>
+    <div id="joe-box"></div>
+    <div id="joe-box"></div>
+</body>
+</html>
